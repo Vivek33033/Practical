@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app5"
+    android:background="@drawable/back_css"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvcenter"
+        android:text="center"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abov center"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/tvcenter"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="below center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvcenter"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="right center"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvcenter"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="left center"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/tvcenter"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
